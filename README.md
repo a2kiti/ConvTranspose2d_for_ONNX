@@ -3,6 +3,8 @@ How to convert nn.ConvTranspose2d to ONNX.js model
 
 ONNX.js does not suppoet ConvTranspose2d layer. (as of May 1, 2020)
 
+[operators.md](https://github.com/microsoft/onnxjs/blob/master/docs/operators.md)
+
 This repository provides a custom Conv2d layer which work as ConvTranspose2d with 2 or 1 stride.
 
 As shown in [A guide to convolution arithmetic for deep learning](https://arxiv.org/abs/1603.07285), ConvTranspose2d is processed by conv2d after upsampling and padding.
